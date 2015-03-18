@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+some:
+   initial:
+      thing: top of the yml prop 
+---
+
+spring:
+   profiles: dev
+my:
+   someprop: dev
+
+---
+
+spring:
+   profiles: test
+my:
+   someprop: test
+    
+---
+
+spring:
+   profiles: prod
+my:
+   someprop: prod
+
+---
+some:
+   other:
+      shared:
+         thing: cool!
+         
